@@ -1,0 +1,66 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* marguee */
+
+.marquee {
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee__inner {
+    display: flex;
+    width: max-content;
+    animation: marquee 60s linear infinite;
+    /* 여기서 속도 조절 가능 */
+}
+
+.marquee__inner span {
+    margin-right: 2em;
+    /* 이미지 사이의 간격 조절 가능 */
+}
+
+.marquee__inner img {
+    width: 160px;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
