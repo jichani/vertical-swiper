@@ -11,6 +11,7 @@ body {
     color: #000;
     margin: 0;
     padding: 0;
+    margin-top: 200px;
 }
 
 .swiper {
@@ -42,7 +43,7 @@ body {
 .marquee__inner {
     display: flex;
     width: max-content;
-    animation: marquee 60s linear infinite;
+    animation: marquee 40s linear infinite;
     /* 여기서 속도 조절 가능 */
 }
 
@@ -61,6 +62,6 @@ body {
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
